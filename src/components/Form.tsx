@@ -5,7 +5,7 @@ import { IoMdCheckmarkCircle } from "react-icons/io";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Link from "next/link";
+
 import { Button } from "./ui/moving-border";
 gsap.registerPlugin(ScrollTrigger);
 import "./styles/forms.css";
@@ -39,11 +39,10 @@ function FormContact() {
     if (email.trim() === "" || message.trim() === "") {
       return;
     }
-    setBtntext(<IoMdCheckmarkCircle color="white" size={24} />);
+    setBtntext("Submitted!");
     console.log("Submitted:", { email, message });
   };
 
-  const hovereffectref = useRef();
   const [bgcolor, setBgcolor] = useState("rgb(17,24,39)");
 
   function hovereffect() {
@@ -85,7 +84,6 @@ function FormContact() {
               onChange={(e) => setMessage(e.target.value)}
               placeholder="Hello Bro!"
               className="textareasec resize-none rounded-lg border border-neutral-800 focus:ring-2 focus:ring-white w-full p-4 bg-neutral-950 placeholder:text-neutral-700 text-white"
-              ref={hovereffectref}
               rows={7}
               required
               title="Your message will be sent to me! that's cool, isn't it?"

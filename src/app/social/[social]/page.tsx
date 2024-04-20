@@ -32,7 +32,7 @@ function Page({params}:any) {
         })
     });
 
-    const hovereffectref = useRef();
+    const hovereffectref = useRef<HTMLDivElement>(null);
     const [bgcolor, setBgcolor] = useState("rgb(17,24,39)");
 
     function hovereffect() {
