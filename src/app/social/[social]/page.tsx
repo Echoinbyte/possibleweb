@@ -12,7 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 
-function Page({params}) {
+function Page({params}:any) {
 
     const urlslug = params.social;
     const sSocial = socialData.social.filter((social => social.slug === urlslug));
