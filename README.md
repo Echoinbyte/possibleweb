@@ -41,8 +41,8 @@ We welcome contributions from the community to make Possibleweb even better! If 
 
 ## Credits
 
-Sambhav Aryal (Echoinbyte) - Lead Developer
-Sandesh Aryal - Contribution through Advising
+- Sambhav Aryal (Echoinbyte) - Lead Developer
+- Sandesh Aryal - Visionary
 
 ---
 
