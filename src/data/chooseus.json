@@ -1,0 +1,48 @@
+{
+  "chooses": [
+    {
+      "title": "",
+      "description": ""
+    },
+    {
+      "title": "Affordable Excellence",
+      "description":
+        "Unlock your potential without breaking the bank. Get top-notch education at a fraction of the cost."
+    },
+    {
+      "title": "Expert Guidance",
+      "description":
+        "Learn from industry veterans with decades of experience. Benefit from practical insights and deep knowledge."
+    },
+    {
+      "title": "High-Quality Content",
+      "description":
+        "Immerse yourself in meticulously curated content designed for exceptional learning experiences."
+    },
+    {
+      "title": "Flexible Learning Options",
+      "description":
+        "Tailor your education to your schedule with flexible learning options. Learn at your own pace without compromise."
+    },
+    {
+      "title": "Interactive Environment",
+      "description":
+        "Engage in collaborative learning with live discussions, group projects, and interactive exercises."
+    },
+    {
+      "title": "Cutting-Edge Resources",
+      "description":
+        "Stay ahead of the curve with our latest technologies and resources. Empowering you for success."
+    },
+    {
+      "title": "Personalized Support",
+      "description":
+        "Receive dedicated support from our team of mentors. Guiding you every step of the way."
+    },
+    {
+      "title": "Global Community",
+      "description":
+        "Join a vibrant global community of learners. Connect, collaborate, and grow together."
+    }
+  ]
+}

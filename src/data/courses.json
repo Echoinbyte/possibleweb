@@ -1,0 +1,154 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "HTML Basics",
+      "slug": "html-basics",
+      "description": "Introduction to HTML - the foundation of web development.",
+      "price": 10.99,
+      "instructor": "Sarala Thapa",
+      "isFeatured": true,
+      "image": "/courses/html.jpg"
+    },
+    {
+      "id": 2,
+      "title": "CSS Essentials",
+      "slug": "css-essentials",
+      "description": "Learn essential CSS concepts to style your web pages.",
+      "price": 15.49,
+      "instructor": "Rajan Adhikari",
+      "isFeatured": true,
+      "image": "/courses/css.jpg"
+    },
+    {
+      "id": 3,
+      "title": "JavaScript Fundamentals",
+      "slug": "javascript-fundamentals",
+      "description": "Fundamental principles of JavaScript for web development.",
+      "price": 17.99,
+      "instructor": "Anita Gurung",
+      "isFeatured": true,
+      "image": "/courses/js.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Introduction to Tailwind CSS",
+      "slug": "tailwind-css-intro",
+      "description": "Introduction to the Tailwind CSS framework for rapid web development.",
+      "price": 12.99,
+      "instructor": "Dinesh Maharjan",
+      "isFeatured": false,
+      "image": "/courses/tailwind.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Node.js Basics",
+      "slug": "node-js-basics",
+      "description": "Basic concepts of Node.js for server-side JavaScript development.",
+      "price": 19.99,
+      "instructor": "Sunita Bhattarai",
+      "isFeatured": true,
+      "image": "/courses/node.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Responsive Web Design",
+      "slug": "responsive-web-design",
+      "description": "Learn to build responsive websites that adapt to various devices and screen sizes.",
+      "price": 7.99,
+      "instructor": "Bishal Sharma",
+      "isFeatured": false,
+      "image": "/courses/responsive.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Python Programming for Beginners",
+      "slug": "python-programming-beginners",
+      "description": "An introduction to Python programming for beginners.",
+      "price": 14.99,
+      "instructor": "Amit Singh",
+      "isFeatured": false,
+      "image": "/courses/python.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Advanced CSS Techniques",
+      "slug": "advanced-css-techniques",
+      "description": "Master advanced CSS techniques like Flexbox and Grid.",
+      "price": 22.99,
+      "instructor": "Priya Patel",
+      "isFeatured": false,
+      "image": "/courses/advance-css.jpg"
+    },
+    {
+      "id": 9,
+      "title": "React.js Fundamentals",
+      "slug": "react-js-fundamentals",
+      "description": "Learn the fundamentals of React.js for building interactive user interfaces.",
+      "price": 24.99,
+      "instructor": "Nischal Shrestha",
+      "isFeatured": false,
+      "image": "/courses/react.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Database Design and SQL",
+      "slug": "database-design-sql",
+      "description": "Learn database design principles and SQL queries.",
+      "price": 20.99,
+      "instructor": "Manisha Rai",
+      "isFeatured": true,
+      "image": "/courses/database.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Java Programming Basics",
+      "slug": "java-programming-basics",
+      "description": "Introduction to Java programming language basics.",
+      "price": 18.99,
+      "instructor": "Ramesh Sharma",
+      "isFeatured": false,
+      "image": "/courses/java.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Graphic Design Fundamentals",
+      "slug": "graphic-design-fundamentals",
+      "description": "Basic principles and techniques of graphic design.",
+      "price": 16.99,
+      "instructor": "Komal Shah",
+      "isFeatured": false,
+      "image": "/courses/graphic.jpg"
+    },
+    {
+      "id": 13,
+      "title": "Cybersecurity Essentials",
+      "slug": "cybersecurity-essentials",
+      "description": "Essential concepts and practices in cybersecurity.",
+      "price": 21.99,
+      "instructor": "Rajiv Gupta",
+      "isFeatured": false,
+      "image": "/courses/cybersecurity.jpg"
+    },
+    {
+      "id": 14,
+      "title": "Data Science Foundations",
+      "slug": "data-science-foundations",
+      "description": "Foundational concepts and techniques in data science.",
+      "price": 23.99,
+      "instructor": "Deepak Mishra",
+      "isFeatured": false,
+      "image": "/courses/data-science.jpg"
+    },
+    {
+      "id": 15,
+      "title": "UX/UI Design Principles",
+      "slug": "ux-ui-design-principles",
+      "description": "Learn the principles of user experience (UX) and user interface (UI) design.",
+      "price": 26.99,
+      "instructor": "Neha Verma",
+      "isFeatured": true,
+      "image": "/courses/ux-ui-design.jpg"
+    }
+  ]
+}

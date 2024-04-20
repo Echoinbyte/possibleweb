@@ -1,0 +1,61 @@
+{
+    "social":[
+        {
+            "name":"Github",
+            "description":"My Github Page",
+            "link":"/github",
+            "image": "/socials/github.jpg",
+            "slug": "github",
+            "qrCodePng": "/socials/echoinbyte_github.svg",
+            "url":"https://github.com/Echoinbyte"
+        },
+        {
+            "name":"Twitter",
+            "description":"My Twitter Page",
+            "link":"/twitter",
+            "image": "/socials/x.jpg",
+            "slug": "twitter",
+            "qrCodePng": "/socials/echoinbyte_x.svg",
+
+            "url":"https://twitter.com/Echoinbyte"
+        },
+        {
+            "name":"Linkedin",
+            "description":"My LinkedIn Page",
+            "link":"/linkedin",
+            "image": "/socials/linkedin-02.jpg",
+            "slug": "linkedin",
+            "qrCodePng": "/socials/echoinbyte_linkedin.svg",
+            "url":"https://www.linkedin.com/in/sambhav-aryal-7871232b7/"
+        },
+        {
+            "name":"Facebook",
+            "description":"My Facebook Page",
+            "link":"/facebook",
+            "image": "/socials/Fbmessenger.jpg",
+            "slug": "facebook",
+            "qrCodePng": "/socials/echoinbyte_fb.svg",
+                
+            "url":"https://www.facebook.com/profile.php?id=61558404252595"
+        },
+        {
+            "name":"Instagram",
+            "description":"My Instagram Page",
+            "link":"/instagram",
+            "image": "/socials/instagram.jpg",
+            "slug": "instagram",
+            "qrCodePng": "/socials/echoinbyte_ig.svg",
+            "url":"https://instagram.com/Echoinbyte"
+        },
+        {
+            "name":"Youtube",
+            "description":"My Youtube Page",
+            "link":"/youtube",
+            "image": "/socials/youtube.jpg",
+            "slug": "youtube",
+            "qrCodePng": "/socials/echoinbyte_yt.svg",
+
+            "url":"https://youtube.com/@Echoinbyte"
+        }
+    ]
+}

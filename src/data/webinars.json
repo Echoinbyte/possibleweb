@@ -1,0 +1,47 @@
+{
+  "webinars": [
+    {
+    "title": "Introduction to Web Development Webinar",
+    "description": "Discover the basics of web development and kickstart your journey to building your first website in our informative webinar.",
+    "slug": "introduction-to-web-development-webinar",
+    "image": "/webinars/webdev.jpg",
+    "isFeatured": true
+    },
+    {
+    "title": "Frontend Development Techniques Webinar",
+    "description": "Join our webinar and explore advanced frontend development techniques to create dynamic user interfaces that captivate your audience.",
+    "slug": "frontend-development-techniques-webinar",
+    "image": "/webinars/responsive.jpg",
+    "isFeatured": true
+    },
+    {
+    "title": "Backend Development Fundamentals Webinar",
+    "description": "Learn the essentials of backend development and server-side scripting in our engaging webinar designed to boost your programming skills.",
+    "slug": "backend-development-fundamentals-webinar",
+    "image": "/webinars/node.jpg",
+    "isFeatured": true
+    },
+    {
+        "title": "HTML Basics Webinar",
+        "description": "Join us for a comprehensive webinar on mastering the fundamentals of HTML - the backbone of web development.",
+        "slug": "html-basics-webinar",
+        "image": "/webinars/html.jpg",
+        "isFeatured": true
+    },
+    {
+        "title": "CSS Essentials Webinar",
+        "description": "Attend our webinar to learn essential CSS concepts and techniques to style your web pages effectively.",
+        "slug": "css-essentials-webinar",
+        "image": "/webinars/css.jpg",
+        "isFeatured": true
+    },
+    {
+        "title": "JavaScript Fundamentals Webinar",
+        "description": "Join our webinar and dive deep into the foundational principles of JavaScript, empowering your web development journey.",
+        "slug": "javascript-fundamentals-webinar",
+        "image": "/webinars/js.jpg",
+        "isFeatured": true
+    }
+    
+    ]
+}

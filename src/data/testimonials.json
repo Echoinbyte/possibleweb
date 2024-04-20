@@ -1,0 +1,68 @@
+{
+    "testimonials": [
+      {
+        "quote":
+          "Taking the HTML course has provided me with a new direction in the field of web development. It has helped me to establish myself as a web developer.",
+        "name": "Suresh Gurung",
+        "isFeatured": true,
+        "title": "HTML Student"
+      },
+      {
+        "quote":
+          "By enrolling in the CSS course, I can now create beautiful and professional web layouts. This course has the potential to change people's perceptions.",
+        "name": "Sanjib Rai",
+        "isFeatured": true,
+        "title": "CSS Student"
+      },
+      {
+        "quote":
+          "The JavaScript course has assisted me in creating dynamic and engaging web pages and advancing them. It has also ensured coding proficiency for me.",
+        "name": "Sunil Thapa",
+        "isFeatured": true,
+        "title": "JavaScript Student"
+      },
+      {
+        "quote":
+          "The Python course was an eye-opener for me. It introduced me to the world of programming and opened up countless opportunities for my career.",
+        "name": "Riya Sharma",
+        "isFeatured": true,
+        "title": "Python Student"
+      },
+      {
+        "quote":
+          "Enrolling in the SQL course has significantly enhanced my database management skills. It's a must for anyone looking to excel in data-related fields.",
+        "name": "Amit Singh",
+        "isFeatured": true,
+        "title": "SQL Student"
+      },
+      {
+        "quote":
+          "Learning Java through this course has been a game-changer for me. It has equipped me with the skills needed to develop robust and scalable applications.",
+        "name": "Rajesh Patel",
+        "isFeatured": true,
+        "title": "Java Student"
+      },
+      {
+        "quote":
+          "The Adobe Photoshop course has transformed my design capabilities. I now have the skills to create stunning visuals and graphics for various projects.",
+        "name": "Priya Verma",
+        "isFeatured": true,
+        "title": "Photoshop Student"
+      },
+      {
+        "quote":
+          "This C++ course has provided me with a solid foundation in programming. It's a comprehensive program suitable for beginners and experienced alike.",
+        "name": "Ankit Gupta",
+        "isFeatured": true,
+        "title": "C++ Student"
+      },
+      {
+        "quote":
+          "The WordPress course has empowered me to build professional websites with ease. It's a user-friendly platform, and the course instructors are excellent.",
+        "name": "Shreya Devi",
+        "isFeatured": true,
+        "title": "WordPress Student"
+      }
+    ]
+  }
+  
