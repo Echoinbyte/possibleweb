@@ -45,27 +45,28 @@ function Page() {
       <BackgroundBeams className="absolute top-0 left-0 w-full h-full z-0" />
         <h1 className="iamavailablehead text-lg md:text-5xl text-center font-sans font-bold mb-8 text-white">I am available on {socialData.social.length} Social Networking Sites.</h1>  
         <div className="wholesocialcontain flex flex-wrap justify-center">
-            {socialData.social.map((course) => (
+            {socialData.social.map((social, index) => (
                 <PinContainer
-                title={course.link}
-                href={`social/${course.link}`}
+                key={index}
+                title={social.link}
+                href={`social/${social.link}`}
               >
-                <Link className="socialtrigger" key={course.name} href={`social${course.link}`}>
+                <Link className="socialtrigger" key={social.name} href={`social${social.link}`}>
                 <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
                   <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
-                    {course.name}
+                    {social.name}
                   </h3>
                   <div className="text-base !m-0 !p-0 font-normal">
                     <span className="text-slate-500 ">
-                      {course.description}
+                      {social.description}
                     </span>
                   </div>
                   <Image
-                      src={course.image}
+                      src={social.image}
                       height="1000"
                       width="1000"
                       className="h-60 w-full z-30 object-cover rounded-xl group-hover/card:shadow-xl"
-                      alt={course.name}
+                      alt={social.name}
                     />
                 </div>
                 </Link>
