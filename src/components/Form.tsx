@@ -1,24 +1,29 @@
 "use client"
 import React, { FormEvent, useEffect, useRef, useState } from "react";
 import { BackgroundBeams } from "@/components/ui/background-beams";
-import { IoMdCheckmarkCircle } from "react-icons/io";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 import { Button } from "./ui/moving-border";
 gsap.registerPlugin(ScrollTrigger);
-import "./styles/forms.css";
 
 function FormContact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [name, setName] = useState("");
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
   const [btntext, setBtntext] = useState("Send Message");
-  const emailInputRef = useRef<HTMLInputElement>(null);
+  const nameInputRef = useRef<HTMLInputElement>(null);
+  const [status, setStatus] = useState("");
+  const [border, setBorder] = useState("");
 
   useEffect(() => {
-    if (emailInputRef.current) {
-      emailInputRef.current.focus();
+    if (nameInputRef.current) {
+      nameInputRef.current.focus();
     }
   }, []);
 
@@ -34,17 +39,55 @@ function FormContact() {
     });
   }, []);
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    if (email.trim() === "" || message.trim() === "") {
-      return;
-    }
-    setBtntext("Submitted!");
-    console.log("Submitted:", { email, message });
+  const handleChange = (event: any) => {
+    setBorder("");
+    const name = event.target.name;
+    const value = event.target.value;
+
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const [bgcolor, setBgcolor] = useState("rgb(17,24,39)");
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
 
+    event.preventDefault();
+    setBtntext("Sending...");
+  
+    try {
+      const response = await fetch(`/api/contact`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }),
+      });
+  
+      if (response.ok) {
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        });
+        setStatus("success");
+        setBorder("success");
+        setBtntext("Submitted!");
+      } else {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+    } catch (error) {
+      console.log(error);
+      setStatus("error");
+      setBorder("error");
+      setBtntext("Submit Failed!");
+    }
+  
+    console.log("Submitted:", formData);
+  };
+  
+
+
+  const [bgcolor, setBgcolor] = useState("rgb(17,24,39)");
   function hovereffect() {
     setBgcolor("linear-gradient(to bottom, #000000, #222222)");
   }
@@ -66,29 +109,51 @@ function FormContact() {
             We&apos;re here to help with any questions about our courses,
             programs, or events. Reach out and let us know how we can assist you
             in your programming and lifelong journey.
+
           </p>
-          <form onSubmit={handleSubmit} className="space-y-4 mt-4">
+          form
+          <form method="POST" onSubmit={handleSubmit} className="space-y-4 mt-4">
             <input
-              ref={emailInputRef}
+              type="text"
+              ref={nameInputRef}
+              name="name"
+              id="name"
+              value={formData.name}
+              onChange={handleChange}
+              style={{borderColor: border === "success" ? "green" : border === "error" ? "orange" : "white"}}
+              placeholder="myname"
+              className={`inputsec rounded-lg border focus:ring-2 focus:ring-white w-full p-4 bg-neutral-950 placeholder:text-neutral-400 text-white`}
+              required
+              title="Your name will be also sent to me! that's cool, isn't it?"
+              autoComplete="off"
+            />
+            <input
               type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              name="email"
+              id="email"
+              value={formData.email}
+              onChange={handleChange}
+              style={{borderColor: border === "success" ? "green" : border === "error" ? "orange" : "white"}}
               placeholder="hello@gmail.com"
-              className="inputsec rounded-lg border border-neutral-800 focus:ring-2 focus:ring-white w-full p-4 bg-neutral-950 placeholder:text-neutral-700 text-white"
+              className={`inputsec rounded-lg border focus:ring-2 focus:ring-white w-full p-4 bg-neutral-950 placeholder:text-neutral-400 text-white`}
               required
               title="Your email will be sent to me! that's cool, isn't it?"
+              autoComplete="off"
             />
-            <div className="custom-tooltip">In Echo...</div>
             <textarea
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
+              name="message"
+              id="message"
+              value={formData.message}
+              onChange={handleChange}
+              style={{borderColor: border === "success" ? "green" : border === "error" ? "orange" : "white"}}
               placeholder="Hello Bro!"
-              className="textareasec resize-none rounded-lg border border-neutral-800 focus:ring-2 focus:ring-white w-full p-4 bg-neutral-950 placeholder:text-neutral-700 text-white"
+              className={`textareasec resize-none rounded-lg border focus:ring-2 focus:ring-white w-full p-4 bg-neutral-950 placeholder:text-neutral-400 text-white`}
               rows={7}
               required
               title="Your message will be sent to me! that's cool, isn't it?"
+              autoComplete="off"
             ></textarea>
-            
+
             <div className="btn3rd mt-20 text-center">
               <Button
                 borderRadius="1rem"
