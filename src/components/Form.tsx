@@ -71,7 +71,7 @@ function FormContact() {
         });
         setStatus("success");
         setBorder("success");
-        setBtntext("Submitted!");
+        setBtntext("Sent Successfully!");
       } else {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
@@ -79,25 +79,14 @@ function FormContact() {
       console.log(error);
       setStatus("error");
       setBorder("error");
-      setBtntext("Submit Failed!");
+      setBtntext("Error in Sending!");
     }
   
-    console.log("Submitted:", formData);
+    console.log("Here's what you've sent to me:", formData);
   };
-  
-
-
-  const [bgcolor, setBgcolor] = useState("rgb(17,24,39)");
-  function hovereffect() {
-    setBgcolor("linear-gradient(to bottom, #000000, #222222)");
-  }
-  function unhovereffect() {
-    setBgcolor("rgb(17,24,39)");
-  }
-
   return (
     <>
-      <div className="min-h-screen py-12 pt-36 relative">
+      <div className="min-h-screen bg-black text-white py-12 pt-36 relative">
         {" "}
         <BackgroundBeams className="absolute top-0 left-0 w-full h-full z-0" />
         <div className="max-w-2xl mx-auto p-4 relative z-10">
@@ -106,12 +95,10 @@ function FormContact() {
             Contact Us
           </h1>
           <p className="helppara text-neutral-500 max-w-lg mx-auto my-2 text-sm text-center">
-            We&apos;re here to help with any questions about our courses,
-            programs, or events. Reach out and let us know how we can assist you
-            in your programming and lifelong journey.
+            We&apos;re here to help with any queries regarding anything. Reach out and let us know how we can assist you
+            in your problem and query.
 
           </p>
-          form
           <form method="POST" onSubmit={handleSubmit} className="space-y-4 mt-4">
             <input
               type="text"
@@ -159,8 +146,6 @@ function FormContact() {
                 borderRadius="1rem"
                 className="text-black submitbtn dark:text-white bg-transparent"
                 type="submit"
-                onMouseEnter={hovereffect}
-                onMouseLeave={unhovereffect}
               >
                 {btntext}
               </Button>
